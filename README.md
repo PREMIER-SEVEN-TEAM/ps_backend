@@ -3,9 +3,9 @@
 <br>
 
 ## 1️⃣ 팀 구성 (Team Members)
-### 🔹 Front-End
+### 🔹  [Front-End](https://github.com/PREMIER-SEVEN-TEAM/ps_frontend)
 이정관 ・ 노인영 ・ 이지희 ・ 추민해
-### 🔹 Back-End
+### 🔹 [Back-End](https://github.com/PREMIER-SEVEN-TEAM/ps_backend)
 이동현 ・ 이동익 ・ 정현진
 <br>
 
