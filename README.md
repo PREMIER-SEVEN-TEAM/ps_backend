@@ -1,2 +1,1 @@
-# ps_backend
-Back-end gitgub repository of Premier Seven Team
+# PRIMIER_SEVEN_BACK_END
