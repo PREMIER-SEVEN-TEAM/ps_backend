@@ -1,4 +1,5 @@
 # PREMIRE_SEVEN_TEAM
+
 <br>
 
 ## 👨‍👩‍👧‍👦 팀 구성 (Team Members)
@@ -8,7 +9,10 @@
 이동현 ・ 이동익 ・ 정현진
 <br>
 
-# BACK_END
+<br>
+
+# PREMIRE_SEVEN_BACK_END
+
 <br>
 
 ## 🛠️ 기술 스택 (Tech Stack)
