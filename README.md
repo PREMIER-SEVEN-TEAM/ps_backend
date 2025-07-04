@@ -9,6 +9,8 @@
 이동현 ・ 이동익 ・ 정현진
 <br>
 
+<br>
+
 ## 2️⃣ BACK_END_PART
 
 ### 🛠️ 기술 스택 (Tech Stack)
@@ -23,6 +25,8 @@
 
 #### 🔹 협업 툴
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+<br>
+
 <br>
 
 ### 👥 Back-End 역할 분담 (Contributors & Roles)
