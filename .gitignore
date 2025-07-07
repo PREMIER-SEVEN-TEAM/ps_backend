@@ -1,1 +1,76 @@
+# ================================
+# 기본 프로젝트 무시 항목 (.gitignore)
+# ================================
+
+# 🔧 Build
+/build/
+/.gradle/
+/out/
+/bin/
+/target/
+/*.class
+*.jar
+*.war
+*.log
+
+# 🔄 IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 🔄 IDE - Eclipse / STS
+.classpath
+.project
+.settings/
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# 🔄 IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# 💻 VS Code
+.vscode/
+
+# 🍏 macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 🪟 Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ⛅️ 환경 설정 / 기타
+.env
+*.bak
+*.tmp
+*.swp
+*.swo
+*.stackdump
+
+# 예외 처리 - 소스 내 일부 build/bin/out 허용
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+!gradle/wrapper/gradle-wrapper.jar
