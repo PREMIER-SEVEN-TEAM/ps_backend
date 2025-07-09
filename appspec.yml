@@ -19,5 +19,5 @@ hooks:
       runas: ubuntu
   AfterInstall:
     - location: scripts/stop.sh
-      timeout: 50
+      timeout: 60
       runas: ubuntu
