@@ -74,3 +74,6 @@ $RECYCLE.BIN/
 !**/src/main/**/out/
 !**/src/test/**/out/
 !gradle/wrapper/gradle-wrapper.jar
+
+# 민감정보 깃허브 업로드 제외
+/src/main/resources/application-product.properties
