@@ -31,16 +31,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build --exclude-task test
 
-      - name: Add execute permission to scripts
-        run: chmod +x scripts/*.sh
-
       - name: Prepare Deployment Directory
         run: |
           mkdir -p deploy
           JAR_FILE=$(ls ./build/libs/*.jar | head -n 1)
           cp "$JAR_FILE" ./deploy/premier7-backend.jar
           cp ./appspec.yml ./deploy/
-          cp ./scripts/*.sh ./deploy/
+          cp -r ./scripts ./deploy/
 
       - name: Make zip package
         run: zip -r ./premier7-deploy.zip ./deploy
