@@ -1,11 +1,11 @@
-package net.supercoding.premier7.test.dto;
+package net.supercoding.premier7.domain.test.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.supercoding.premier7.test.entity.ItemEntity;
+import net.supercoding.premier7.domain.test.entity.ItemEntity;
 
 public class ItemDto {
 
@@ -32,13 +32,13 @@ public class ItemDto {
     @Builder
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class ItemCreateResponse {
+    public static class ItemResponse {
 
         private Long itemPk;
 
-        public static ItemCreateResponse fromEntity(ItemEntity itemEntity) {
+        public static ItemResponse fromEntity(ItemEntity itemEntity) {
 
-            return ItemCreateResponse.builder()
+            return ItemResponse.builder()
                     .itemPk(itemEntity.getItemPk())
                     .build();
         }

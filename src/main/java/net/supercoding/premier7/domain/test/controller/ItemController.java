@@ -1,10 +1,12 @@
-package net.supercoding.premier7.test.controller;
+package net.supercoding.premier7.domain.test.controller;
 
+import java.util.List;
 import lombok.RequiredArgsConstructor;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateRequest;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateResponse;
-import net.supercoding.premier7.test.service.ItemService;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateRequest;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemResponse;
+import net.supercoding.premier7.domain.test.service.ItemService;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +21,7 @@ public class ItemController {
     private final ItemService itemService;
 
     @PostMapping("")
-    public ItemCreateResponse itemCreate(
+    public ItemResponse itemCreate(
             @RequestBody ItemCreateRequest itemCreateRequest
     ){
         return itemService.itemCreate(itemCreateRequest);
@@ -32,4 +34,8 @@ public class ItemController {
         return itemService.itemDelete(itemPk);
     }
 
+    @GetMapping("")
+    public List<ItemResponse> itemList() {
+        return itemService.itemList();
+    }
 }

@@ -1,4 +1,4 @@
-package net.supercoding.premier7.test.entity;
+package net.supercoding.premier7.domain.test.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
