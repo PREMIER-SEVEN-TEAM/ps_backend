@@ -32,13 +32,13 @@ public class ItemDto {
     @Builder
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class ItemCreateResponse {
+    public static class ItemResponse {
 
         private Long itemPk;
 
-        public static ItemCreateResponse fromEntity(ItemEntity itemEntity) {
+        public static ItemResponse fromEntity(ItemEntity itemEntity) {
 
-            return ItemCreateResponse.builder()
+            return ItemResponse.builder()
                     .itemPk(itemEntity.getItemPk())
                     .build();
         }

@@ -1,8 +1,10 @@
 package net.supercoding.premier7.domain.test.service;
 
+import java.util.ArrayList;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateRequest;
-import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateResponse;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemResponse;
 import net.supercoding.premier7.domain.test.entity.ItemEntity;
 import net.supercoding.premier7.domain.test.repository.ItemRepository;
 import org.springframework.http.HttpStatus;
@@ -17,9 +19,9 @@ public class ItemService {
     private final ItemRepository itemRepository;
 
     @Transactional
-    public ItemCreateResponse itemCreate(ItemCreateRequest itemCreateRequest) {
+    public ItemResponse itemCreate(ItemCreateRequest itemCreateRequest) {
 
-        return ItemCreateResponse.fromEntity(
+        return ItemResponse.fromEntity(
                 itemRepository.save(
                         ItemCreateRequest.toEntity(itemCreateRequest)
                 )
@@ -37,6 +39,16 @@ public class ItemService {
         return itemPk + " 삭제 완료되었습니다.";
     }
 
+    @Transactional(readOnly = true)
+    public List<ItemResponse> itemList() {
 
+        List<ItemResponse> itemResponseList = new ArrayList<>();
+
+        for(ItemEntity itemEntity : itemRepository.findAll()) {
+            itemResponseList.add(ItemResponse.fromEntity(itemEntity));
+        }
+
+        return itemResponseList;
+    }
 
 }
