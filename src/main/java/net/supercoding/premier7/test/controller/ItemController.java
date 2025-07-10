@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import net.supercoding.premier7.test.dto.ItemDto.ItemCreateRequest;
 import net.supercoding.premier7.test.dto.ItemDto.ItemCreateResponse;
 import net.supercoding.premier7.test.service.ItemService;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,13 @@ public class ItemController {
             @RequestBody ItemCreateRequest itemCreateRequest
     ){
         return itemService.itemCreate(itemCreateRequest);
+    }
+
+    @DeleteMapping("/{itemPk}")
+    public String itemDelete(
+            @PathVariable("itemPk") Long itemPk
+    ) {
+        return itemService.itemDelete(itemPk);
     }
 
 }
