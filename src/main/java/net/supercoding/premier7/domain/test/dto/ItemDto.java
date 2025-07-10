@@ -1,11 +1,11 @@
-package net.supercoding.premier7.test.dto;
+package net.supercoding.premier7.domain.test.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.supercoding.premier7.test.entity.ItemEntity;
+import net.supercoding.premier7.domain.test.entity.ItemEntity;
 
 public class ItemDto {
 

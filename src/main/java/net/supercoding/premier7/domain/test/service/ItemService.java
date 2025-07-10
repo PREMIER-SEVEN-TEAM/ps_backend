@@ -1,10 +1,10 @@
-package net.supercoding.premier7.test.service;
+package net.supercoding.premier7.domain.test.service;
 
 import lombok.RequiredArgsConstructor;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateRequest;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateResponse;
-import net.supercoding.premier7.test.entity.ItemEntity;
-import net.supercoding.premier7.test.repository.ItemRepository;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateRequest;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateResponse;
+import net.supercoding.premier7.domain.test.entity.ItemEntity;
+import net.supercoding.premier7.domain.test.repository.ItemRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

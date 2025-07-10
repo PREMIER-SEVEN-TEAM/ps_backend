@@ -1,9 +1,9 @@
-package net.supercoding.premier7.test.controller;
+package net.supercoding.premier7.domain.test.controller;
 
 import lombok.RequiredArgsConstructor;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateRequest;
-import net.supercoding.premier7.test.dto.ItemDto.ItemCreateResponse;
-import net.supercoding.premier7.test.service.ItemService;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateRequest;
+import net.supercoding.premier7.domain.test.dto.ItemDto.ItemCreateResponse;
+import net.supercoding.premier7.domain.test.service.ItemService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
